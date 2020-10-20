@@ -1,1 +1,60 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    background: #f4f6f9;
+}
+.topbar { height: 6.375rem;}
+.topbar .fa {font-size: 24px; color: #333;}
+
+.box {
+    position: relative;
+    width: 220px;
+}
+.search {
+    width: 200px;
+    max-width:0;
+    padding: 10px;
+    transition: all .5s ease;
+    position:absolute;
+    right:20px;
+    box-sizing:border-box;
+    opacity:0;
+}
+.search.expanded {
+    max-width:200px;
+    opacity:1;
+}
+.icon {
+   position: absolute;
+   right: 0;
+}
+
+.topbar .nav-item .nav-link { font-size: 18px; color: #999999;}
+.topbar .nav-item .nav-link.active { font-weight: bold; color: #00447b;}
+
+.card {
+    border-color: #f4f4f4;
+    box-shadow: 0 0 10px #e4e4e4 ;
+    background-color: #fff;
+}
+.card-header {
+    background-color: #fff;
+}
+
+/* Custom List */
+.color-yellow { border-left: gold solid 4px;}
+.color-red { border-left: red solid 4px;}
+.color-green { border-left: green solid 4px;}
+
+.custom-card { margin-top: 30px; color: #000;}
+.custom-card h2{ font-size: 20px;  font-weight: bold; margin: 20px auto;}
+.custom-card h5 {  font-size: 18px; color:#000; font-weight: bold;}
+.custom-card p { color:#7b7b7b}
+
+.custom-card span { font-size: 14px;}
+
+.custom-card ul.custom-list { list-style: none; padding: 0; margin: 0;}
+.custom-card ul.custom-list > li { padding: 10px 20px; position: relative; border-bottom: #eaedf2 solid 1px;}
+.custom-card ul.custom-list > li a.bookmark{ position: absolute; right: 20px; top: 20px; color: #dcdfe6;}
+
+.custom-card ul.custom-list > li span.datefrmt { color: #9ba7c0;}
+.custom-card ul.custom-list > li span.shortinfo { color: #000;}
