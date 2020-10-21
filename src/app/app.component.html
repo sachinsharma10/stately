@@ -13,11 +13,11 @@
       <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
         <i class="fa fa-bars"></i>
       </button>
-     
+
       <ul class="nav ml-auto mr-auto">
-        <li class="nav-item"><a [routerLink]="['']" class="nav-link" [routerLinkActive]="['active']" title="Dashboard">Dashboard</a></li>
+        <li class="nav-item"><a [routerLink]="['']" class="nav-link" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{ exact: true }" title="Dashboard">Dashboard</a></li>
         <li class="nav-item"><a [routerLink]="['/states']" class="nav-link" [routerLinkActive]="['active']" title="States">States</a></li>
-        <li class="nav-item"><a [routerLink]="['/topics']" class="nav-link" [routerLinkActive]="['active']" title="Topics">Topics-</a></li>
+        <li class="nav-item"><a [routerLink]="['/topics']" class="nav-link" [routerLinkActive]="['active']" title="Topics">Topics</a></li>
       </ul>
       <!-- Topbar Navbar -->
       <ul class="navbar-nav">
@@ -110,11 +110,11 @@
           </div>
         </li>
 
- 
+
 
         <!-- Nav Item - Messages -->
         <li class="nav-item dropdown no-arrow mx-3">
-          
+
           <!-- Dropdown - Messages -->
           <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
             aria-labelledby="messagesDropdown">
@@ -175,7 +175,7 @@
         <li class="nav-item dropdown no-arrow">
           <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
-           
+
             <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
           </a>
           <!-- Dropdown - User Information -->
