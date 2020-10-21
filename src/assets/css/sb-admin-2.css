@@ -10132,8 +10132,12 @@ a:focus {
   position: absolute;
   transform: scale(0.7);
   transform-origin: top right;
-  right: .25rem;
-  margin-top: -.25rem;
+  right: 1.55rem;
+  margin-top: -.10rem;
+  padding: 7px;
+  border-radius: 50%;
+  display: block;
+  border: #fff solid 2px;
 }
 
 .sidebar .nav-item .nav-link .img-profile,

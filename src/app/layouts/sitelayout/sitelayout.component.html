@@ -1,0 +1,72 @@
+<!-- Content Wrapper -->
+<div id="content-wrapper" class="d-flex flex-column">
+
+  <!-- Main Content -->
+  <div id="content">
+
+    <!-- Topbar -->
+    <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+      <a routerLink="/" title="Ogletree Deakins">
+        <img src="../assets/img/OD_logo.png" width="106" alt="">
+      </a>
+      <!-- Sidebar Toggle (Topbar) -->
+      <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+        <i class="fa fa-bars"></i>
+      </button>
+
+      <ul class="nav ml-auto mr-auto">
+        <li class="nav-item"><a [routerLink]="['']" class="nav-link" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{ exact: true }" title="Dashboard">Covid-19 Resources</a></li>
+        <li class="nav-item"><a [routerLink]="['/people']" class="nav-link" [routerLinkActive]="['active']" title="People">People</a></li>
+        <li class="nav-item"><a [routerLink]="['/locations']" class="nav-link" [routerLinkActive]="['active']" title="Locations">Locations</a></li>
+        <li class="nav-item"><a [routerLink]="['/insights-podcast']" class="nav-link" [routerLinkActive]="['active']" title="Insights/Podcast">Insights/Podcast</a></li>
+        <li class="nav-item"><a [routerLink]="['/webinars']" class="nav-link" [routerLinkActive]="['active']" title="Webinars">Webinars</a></li>
+        <li class="nav-item"><a [routerLink]="['/solutions']" class="nav-link" [routerLinkActive]="['active']" title="Solutions">Solutions</a></li>
+        <li class="nav-item"><a [routerLink]="['/diversity']" class="nav-link" [routerLinkActive]="['active']" title="Diversity">Diversity</a></li>
+      </ul>
+      <!-- Topbar Navbar -->
+      <ul class="navbar-nav">
+
+        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+        <li class="nav-item dropdown no-arrow d-sm-none">
+          <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-search fa-fw"></i>
+          </a>
+          <!-- Dropdown - Messages -->
+          <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+            <form class="form-inline mr-auto w-100 navbar-search">
+              <div class="input-group">
+                <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                  aria-label="Search" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-primary" type="button">
+                    <i class="fa fa-search fa-sm"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </li>
+
+        <li class="nav-item no-arrow mx-3 box py-3">
+          <!-- Topbar Search -->
+       <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+         <div class="input-group">
+           <input type="text" class="form-control bg-light border-0 search" placeholder="Search for..."
+             aria-label="Search" aria-describedby="basic-addon2">
+           <div class="input-group-append icon">
+             <button class="btn " type="button">
+               <i class="fa fa-search fa-sm"></i>
+             </button>
+           </div>
+         </div>
+       </form>
+     </li>
+
+
+
+      </ul>
+
+    </nav>
+    <!-- End of Topbar -->
+    <router-outlet></router-outlet>
