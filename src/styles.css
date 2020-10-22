@@ -60,7 +60,8 @@ body {
 .custom-card ul.custom-list > li span.shortinfo { color: #000;}
 
 /* Login Signup */
-.full-height { min-height: 100vh; }
+.logo-signup img{ width: 74px; position: relative; left:-100px; margin: 20px 0 50px 20px;}
+.full-height { min-height: 100vh;width: 100%; }
 .vertical-align {
     display: table;
     height: 100%;
@@ -73,7 +74,7 @@ body {
     background-color: #ffffff !important;
 }
 .bg-grey {
-   background-color: #97A4BE66;
+   background-color: #d5dae5;
 }
 .no-pdd-horizon {
     padding-left: 0 !important;
@@ -84,8 +85,8 @@ body {
     padding-right: 70px !important;
 }
 .pdd-horizon-200{
-    padding-left: 12.5rem !important;
-    padding-right: 12.5rem !important;
+    padding-left: 18% !important;
+    padding-right: 18% !important;
 }
 .vertical-align .table-cell {
     display: table-cell;
@@ -95,3 +96,5 @@ body {
 .font-size-21 { font-size: 21px; color: #002856;}
 
 /* input fields */
+
+.full-height.bg .img-caption{ background-repeat: no-repeat; height: 100vh; background-position: center center}
