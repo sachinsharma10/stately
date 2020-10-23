@@ -22,6 +22,7 @@ import { ResourcesComponent } from './site/resources/resources.component';
 import { DashboardComponent } from './admin/dashboard/dashboard.component';
 import { StatesComponent } from './admin/states/states.component';
 import { TopicsComponent } from './admin/topics/topics.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,9 @@ import { TopicsComponent } from './admin/topics/topics.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
